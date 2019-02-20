@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Moonambika.co</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+      <style>
+      #demo{
+        padding-left: 300px;
+        padding-top: 100px;
+
+      }  
+      #pos{
+        padding-left: 650px;
+
+      }
+      #pos2
+      {
+        padding-left: 600px;
+      }
+      #gg
+      {
+        padding-bottom: 20px;
+      }
+      #im
+      {
+        height: 150px;
+    
+      }
+      .gallery {
+  width: 860px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  height:130px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2.75,2.75);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+     
+
+  </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">go back</a></li>
+                        
+                      
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1 style="font-family: palatino;font-size:50px; ">Moonambika 2K18 </h1><<h1 style="font-size:30px; font-family: palatino; ">Rices and Tech Expo</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">contact us</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+        <h1 id="demo" style="font-size: 50px;font-size: 70px;color: Grey;"></h1>
+                 
+            </div>
+          
+            
+        </header>
+        </style>
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 21, 2018 15:29:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+</script>
+
+<section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Hyderabad Expo</h2>
+               
+            </div>
+
+<div class="gallery cf">
+   
+<div>    <img src="resources/img/hyderabad/DSC_0329.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0331.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0332.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0333.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0334.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0332.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0336.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0337.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0338.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0339.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0340.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0341.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0342.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0343.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0344.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0345.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0346.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0347.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0349.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0348.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0351.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0351.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0353.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0354.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0355.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0356.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0357.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0358.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0359.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0360.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0361.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0362.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0371.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0373.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0374.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0378.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0379.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0380.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0381.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0382.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0383.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0384.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0386.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0391.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0393.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0394.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0395.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0402.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0403.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0410.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0411.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0412.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0413.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0414.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0415.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0416.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0417.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0418.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0424.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0425.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0428.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0433.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0434.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0439.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0441.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0444.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0445.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0452.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0455.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0460.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0461.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0463.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0464.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0465.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0467.jpg" /> </div>
+
+<div>    <img src="resources/img/hyderabad/DSC_0468.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0471.jpg" /> </div>
+<div>    <img src="resources/img/hyderabad/DSC_0480.jpg" /> </div>
+</div>
+<div class="row">
+               <br> <h2>Assam Expo</h2></div></br>
+               
+            </div>
+
+<div class="gallery cf">
+<div>    <img src="resources/img/assam/DSC_1011.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1022.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1027.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1029.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1032.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1034.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1035.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1038.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1045.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1049.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1051.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1054.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1058.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1059.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1063.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1064.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1067.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1074.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1085.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1148.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1157.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1170.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1177.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1219.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1223.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1248.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1453.jpg" /> </div>
+<div>    <img src="resources/img/assam/DSC_1464.jpg" /> </div>
+</div>
+
+<div class="row">
+               <br> <h2>Vijaywada Expo</h2></br>
+               
+            </div>
+
+<div class="gallery cf">
+   
+   <div>    <img src="resources/img/vijayawada/Untitled-1.jpg" /> </div>
+     <div>    <img src="resources/img/vijayawada/Untitled-2.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-3.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-4.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-5.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-6.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-7.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-8.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-9.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-10.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-11.jpg" /> </div>
+  <div>    <img src="resources/img/vijayawada/Untitled-12.jpg" /> </div>
+  
+
+</div>
+    <div class="row">
+                <br><h2>Kangayam Expo</h2></br>
+               
+            </div>
+
+<div class="gallery cf">
+<div>    <img src="resources/img/kangayam/JEY_9539.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9540.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9541.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9542.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9543.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9544.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9545.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9546.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9547.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9548.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9549.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9551.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9552.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9558.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9567.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9568.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9569.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9570.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9572.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9587.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9588.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9611.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9615.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9619.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9620.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9621.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9622.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9624.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9647.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9648.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9653.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9715.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9718.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9722.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9724.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9725.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9737.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9756.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JEY_9765.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5269 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5274 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5277 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5285 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5344 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5345 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5346 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5347 - Copy - Copy.jpg" /> </div>
+<div>    <img src="resources/img/kangayam/JYML5349 - Copy - Copy.jpg" /> </div>
+</div>
+    <div class="row">
+               <br> <h2>Madhurai Expo</h2></br>
+               
+            </div>
+
+<div class="gallery cf">
+  <div>    <img src="resources/img/chennai/Photo-1.jpg" /> </div>
+  <div>    <img src="resources/img/chennai/Photo-2.jpg" /></div>
+  <div><img src="resources/img/chennai/Photo-3.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-4.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-5.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-6.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-7.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-8.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-9.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-10.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-11.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-12.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-13.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-14.jpg "/></div>
+   <div> <img src="resources/img/chennai/Photo-15.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-16.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-17.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-18.jpg" /> </div>
+  <div> <img src="resources/img/chennai/005.jpg "/></div>
+     <div><img src="resources/img/chennai/006.jpg" /></div>
+     <div><img src="resources/img/chennai/IMG_20160706_130023_HDR_1467790963594.jpg" /></div>
+</div>
+ <div class="row">
+               <br> <h2>Chennai Expo</h2></br>
+               
+            </div>
+
+<div class="gallery cf">
+ <div>    <img src="resources/img/chennai/Photo-1.jpg" /> </div>
+  <div>    <img src="resources/img/chennai/Photo-2.jpg" /></div>
+  <div><img src="resources/img/chennai/Photo-3.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-4.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-5.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-6.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-7.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-8.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-9.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-10.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-11.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-12.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-13.jpg" /> </div>
+  <div> <img src="resources/img/chennai/Photo-14.jpg "/></div>
+   <div> <img src="resources/img/chennai/Photo-15.jpg" /></div>
+   <div><img src="resources/img/chennai/Photo-16.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-17.jpg" /></div>
+  <div> <img src="resources/img/chennai/Photo-18.jpg" /> </div>
+  <div> <img src="resources/img/chennai/005.jpg "/></div>
+     <div><img src="resources/img/chennai/006.jpg" /></div>
+     <div><img src="resources/img/chennai/IMG_20160706_130023_HDR_1467790963594.jpg" /></div>
+</div>
+            
+        </section>
+                
+            </div>
+               <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">go back</a></li>
+                        
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+        </section>
+        
+        <footer>
+
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Mookambika.co. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
+</html>

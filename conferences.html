@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Moonambika.co</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+      <style>
+      #demo{
+        padding-left: 300px;
+        padding-top: 100px;
+
+      }  
+      #pos{
+        padding-left: 650px;
+
+      }
+      #pos2
+      {
+        padding-left: 600px;
+      }
+      #gg
+      {
+        padding-bottom: 20px;
+      }
+      #im
+      {
+        height: 150px;
+    
+      }
+      * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#featureRight {
+    width:70%;
+    margin:0 auto;
+    border:grey;
+    box-shadow:20px 20px 20px #999999;
+  overflow:hidden;
+margin-bottom:10%;
+padding-top: 5%;
+}
+
+#featureRight img{
+    width:30%;
+  float:left;
+  margin: 10px;
+}
+
+#featureRight p { 
+    width:60%;
+  text-align:left;
+  float:left;
+  padding:1em;
+}
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 55%;
+    box-shadow: 2px 2px 2px #efefef;
+}
+
+  </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">go back</a></li>
+                        
+                      
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1 style="font-family: palatino;font-size:50px; ">Moonambika 2K18 </h1><<h1 style="font-size:30px; font-family: palatino; ">Rices and Tech Expo</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">contact us</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+        <h1 id="demo" style="font-size: 50px;font-size: 70px;color: Grey;"></h1>
+                 
+            </div>
+          
+            
+        </header>
+        </style>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 21, 2018 15:29:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+</script>
+
+                
+             <section class="section-features js--section-features" id="features">
+            <div id="featureRight">
+              <h2>Hyderabad Meeting - 2018</h2>
+            <p>  Federation of All India Rice Millers Association Meeting and Telangana State Rice Millers Association General Body Meeting was held at Hyderabad on 2nd February 2018. .</p>
+            <img src="resources/img/conf/1.jpg"/>
+            </div>
+             <div id="featureRight">
+              <h2>Kangayam Meeting - 2017</h2>
+            <p>   We had organised a Get-together Meeting Of Tamilnadu Rice Millers With Karanataka Paddy Suppliers and Brokers Hosted By Kangayam Taluka Rice Millers Association and Federation of Tamilnadu Rice mill Owners and Paddy Rice Dealers Association. We had also Conducted a Seminar Hosted By IICPT Tanjavur and CFTRI Mysore. </p>
+            <img src="resources/img/conf/2.png"/>
+            </div>
+             <div id="featureRight">
+              <h2>Vijayawada Meeting - 2015</h2>
+            <p>     Finally, the Federation of South Indian Rice Mill Owners Association Meeting had been Formed in Vijayawada on April 2015 was organised by MMR MEDIA and Hosted by Andhra Pradesh Rice Millers Association.Sri. T. Devendra Reddy is unanimously elected as a President of Federation of South Indian Rice Mill Owners Association. </p>
+            <img src="resources/img/conf/3.jpg"/>
+            </div>
+             <div id="featureRight">
+              <h2>Madurai Meeting - 2014</h2>
+            <p>    The Formation of South Indian Rice Mill Owners Association Preliminary Meeting conducted in our Mookambika Rice And Pulses Tech Expo-2014 at Hotel North Gate, Madurai under the leadership ofThe Federation of Tamilnadu Rice Mill Owners & Paddy-Rice Dealers Association President Mr. CMJF. Lion D. THULASINGAM. The Meeting was attended by United Andrapradesh President Mr. T. DEVENDRA REDDY ,Karnataka Rice Millers Association President Mr. N.R Vishwaradya,Tamilnadu Rice Mill Owners Association Secreatary Dr. A.C.Mohan,Pondicherry Rice Mill Owners Association President Mr. R.Yuvaraj and Secretary Mr. Sendhil kumar and Kerala Rice Mill Owners Association SecretaryMr.verky peter.  .</p>
+            <img src="resources/img/conf/4.jpg"/>
+            </div>
+             <div id="featureRight">
+              <h2>Chennai Meeting - 2012</h2>
+            <p>    We have conducted a seminar about Rice Processing Technology Presided by CMJF.Ln. D. THULASINGAM President, Federation of TamilNadu Rice Mill Owners and Paddy & Rice Dealers Association, Sri. T. DEVENDRA REDDY Ex-President of united Andra Pradesh Rice Mills Association,Dr. A.C. MOHAN M.S,FRCS General Secretary, Federation of TamilNadu Rice Mill Owners and Paddy & Rice Dealers Association, Dr. P. PILLAIYAR International, Consultant Rice Processing, Shri. Er. P. KUMARESAN Research Engineer(Rtd) National Institute of crop Processing Technology Govt. Of INDIA andShri. D S GANAPATHI BE, MBA Millmore Engineering Chennai are participated as a Chief Guests. .</p>
+            <img src="resources/img/conf/5.jpg"/>
+            </div>
+                 <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">go back </a></li>
+                       
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+        </section>
+        
+        <footer>
+
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Mookambika.co. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
+</html>

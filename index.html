@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Mookambika.co</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+      <style>
+      #demo{
+      	padding-left: 300px;
+      	padding-top: 100px;
+
+      }  
+      #pos{
+      	padding-left: 650px;
+
+      }
+      #pos2
+      {
+      	padding-left: 600px;
+      }
+      #gg
+      {
+      	padding-bottom: 20px;
+      }
+      #im
+      {
+      	height: 150px;
+    
+      }
+	   </style>
+	</head>
+ 
+  
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/favicons/apple-touch-icon-57x57.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Exibition</a></li>
+                        <li><a href="#cities1">Conferences</a></li>
+                        <li><a href="#events1">Events</a></li>	
+                         <li><a href="#plans">Gallery</a></li>
+                      
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1 style="font-family: palatino;font-size:50px; ">Mookambika 2K18 </h1><<h1 style="font-size:30px; font-family: palatino; ">Rices and Tech Expo</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">contact us</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+        <h1 id="demo" style="font-size: 50px;font-size: 70px;color: Grey;"></h1>
+                
+            </div>
+          
+         
+        </header>
+        </style>   
+		<script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 21, 2018 15:29:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+</script>
+
+<br>
+<div style="background-image: url(resources/img/bg.jpg); margin:3px; background-repeat: repeat-x;" alt="Smiley " align="middle" width="20" height="10">
+<center>
+<div style="width:100%; height:180px">
+         <img src="resources/img/ms.png" style="margin:3px;" alt="Smiley " align="middle" width="200" height="100">
+     <img src="resources/img/ms2.png" alt="Smiley " align="middle" width="200" height="100">
+ <img src="resources/img/ms3.png" alt="Smiley " align="middle" width="200" height="100">
+  <img src="resources/img/ms4.png" style="margin:3px;" alt="Smiley " align="middle" width="200" height="100">
+    
+</div>
+     <div style=" border:5px; border-style: solid; width:410px;"><p ><img src="resources/img/exb.jpg" alt="Smiley face" align="middle" width="400" height="600"></p> </div> <br>
+    <a href="resources/img/notice.jpg" class="btn btn-ghost" download="Broucher">Download Broucher
+</a>
+</center>
+</div>
+ 
+
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+               <br> <h2 id='gg'>Our   Expo's</h2> </br>
+                <p class="long-copy" id='gg'>
+                    Mookambika Exhibitions is launching a unique campaign to attract more visitors for Mookambika Rice & pulses Tech Expo 2018 from all over the Telangana & Andra Pradesh.
+                </p>
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-list-outline icon-big"></i>
+                    <h3>Exhibitions List </h3>
+                    <p>
+                        We promote by Extensive coverage in our newspaper and advertising in public newspapers,local tv channels and radio channels.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-people-outline icon-big"></i>
+                    <h3>Visitors List </h3>
+                    <p>
+                        We hope that this Expo will be surely benefitable to everyone to show their products and Brands and it will make direct contact with new potential customers and creating business opportunities to increase your business ratio. We are expecting more than 2000 visitors will be participated in the expo.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-paper-outline icon-big"></i>
+                    <h3>Floor plan</h3>
+                    <p>
+                        For Floor Plan,please Contact: +91-96770-77217
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-home-outline icon-big"></i>
+                    <h3>Accomodation</h3>
+                    <p>
+                        Coming Soon...!!
+                    </p>
+               
+                <a style="margin-left: 25px;" class="btn btn-ghost" download="Broucher">More info</a>
+                 </div>
+            </div>
+			<center> <a class="btn btn-ghost" href="exhibition.html"> More info</a></center>
+
+        </section>
+        
+        <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/exb/1.jpg" alt="img1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/exb/2.jpg" alt="1mg2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/exb/3.jpg" alt="img3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/exb/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img style="height:280px;"src="resources/img/exb/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img  style="height:280px;" src="resources/img/exb/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img style="height:280px;" src="resources/img/exb/7.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img style="height:280px;" src="resources/img/exb/8.png" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        
+        
+        
+        <section class="section-cities" id="cities1">
+            <div class="row">
+                <h2>Our Conferences</h2>
+            </div>  
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/conf/1.jpg" alt="Lisbon">
+                    <h3>Hyderabad Meeting - 2018</h3>
+                    
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        view more info..
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@Mookambika.co</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/conf/2.png" alt="San Francisco">
+                    <h3>Kangayam Meeting - 2017</h3>
+                    
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        view more info..
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@mookambika.co</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img id='im' src="resources/img/conf/3.jpg" alt="Berlin">
+                    <h3>Vijayawada Meeting - 2015</h3>
+                    
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        view more info..
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@mookambika.co</a>
+                    </div>
+                </div>
+               
+                <div class="col span-1-of-4 box">
+                    <img src="resources/img/conf/4.jpg" alt="London">
+                    <h3>Madurai Meeting - 2014</h3>
+                    
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        view more info..
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@mookambika.co</a>
+                    </div>
+               </div>
+			   </div>
+            <div class="row js--wp-3">
+            <div id='al' class="col span-1-of-4 box">
+                    <img src="resources/img/conf/5.jpg" alt="London">
+                    <h3>Chennai Meeting - 2012</h3>
+                    
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        view more info..
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="#">@mookambika.co</a>
+                    </div>
+            </div>
+        </div>
+            		<center> <a class="btn btn-ghost" href="conferences.html">More info</a></center>
+        </section>
+        
+        <section class="section-testimonials" id="events1">
+            <div class="row">
+                <h2>Explore our events</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        We had organised our 4th International Mookambika Rice & Pulses Tech Expo was held at Shubham Convention Centre, Nagole, Hyderabad on 2,3 & 4 February 2018
+                        <cite><img src="resources/img/eve/1.png" alt="Customer 1 photo">Hyderabad Event</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                       We had organised our 3rd International Mookambika Rice & Pulses , Oil & Food Pack Tech Expo in 2016, at NSN MAHAL ,Kangayam near Coimbatore
+                        <cite><img src="resources/img/eve/2.jpg" alt="Customer 2 photo">Kangayam Event</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+We stepped into another milestone of 2nd Mookambika Rice and Pulses Tech Expo in 2014, at Kalai Arangam Hall, Thamukkam Ground, MADURAI
+                    <cite><img src="resources/img/eve/3.jpg" alt="Customer 3 photo">Madurai Event</cite>
+                    </blockquote>
+                </div>
+            
+          </div><div class="row">
+			 <div class="col span-1-of-3">
+                    <blockquote>
+We are very much glad to share that, We have Organised our 1st International Mookambika Rice and Pulses Tech Expo in 2012,at “Chennai Trade Centre
+                    <cite><img src="resources/img/eve/4.png" alt="Customer 3 photo">Chennai Event</cite>
+                    </blockquote>
+                </div>
+            </div>
+					<center> <a class="btn btn-ghost" href="events.html">More info</a></center>
+        </section>
+        
+        
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Dive into our Gallery</h2>
+            </div>
+
+<section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/1.jpg" alt="img1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/2.jpg" alt="1mg2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/3.jpg" alt="img3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/7.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/gal/8.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+			<br><br><center> <a class="btn btn-ghost" href="gallery.html">Explore</a></center>
+        </section>
+
+
+
+
+
+           
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+               <br> <h2>We're happy to hear from you</h2><br>
+                
+                            </div>
+            
+
+
+
+<div class="row">
+                <form roll="form" method="post" action="sendemail.php">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">First Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="first_name" maxlength="50" placeholder="Your first name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Last Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="last_name"  placeholder="Yourlast name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Company</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="cmp" placeholder="Your company name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Designation</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="desg" placeholder="Your Designation" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">City</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="city" placeholder="Your city" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Phone number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="mobile" maxlength="30" placeholder="Your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" maxlength="80" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Website</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="message" maxlength="300"placeholder="Your website address" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input name="submit" type="submit" value="Send a mail">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+            	 <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Exibition</a></li>
+                        <li><a href="#cities1">Conferences</a></li>
+                        <li><a href="#events1">Events</a></li>
+                        <li><a href="#plans">Gallery</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+        </section>
+        
+        <footer>
+
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Mookambika.co. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
+</html>
